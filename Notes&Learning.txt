@@ -34,19 +34,59 @@ some possible options for token based authentication are:
 - OpenID
 - JWT
 
+
+What is Encryption?
+Encrytion is used to provide confidentiality
+ -Confidentiality : Only intended recipient can interpret the data
+
+two types of Key Based encryption?
+
+    - symmetric Encryption (Encrypt and Decrypt using the same keys)
+    - Asymmetric Encryption (Encrypt and Decrypt using different keys)
+
+
+What are public Key cryptography?
+public Key cryptography, you create two keys -
+    -private key - secret known only to you
+    -public key  - public anyone can know
+
 What is digital signature?
 A digital signature is equivalent to a handwritten signature, It is an eletronic verification of the sender and it serves three purposes
 
 1. Authentication - A digital signature gives the receiver reason to believe the message was created and sent by the claimed sender
-2. Non -repudiation - with digital signature the sender cannot deny having sent the message later on
+2. Non-repudiation - with digital signature the sender cannot deny having sent the message later on
 3. Integrity
 
 Digital signature uses asymmetric crytography, which means public key algorithm is employed
+
+What is hashing?
+
+Hashing is a process where an algorithm is used to turn any piece of data into fixed length representation of data
+
+Hashing starts with a hash function(a piece of code) and most popular hashing functions are MD5 and SHA2-256
+
+Hashing is a 1-way process, and cannot be derived the data from hash
+
+Same data always produces same HASH
+
+Hashing collision?
+ if the has of data A equals to the hash of data B , this is a symbol of weak collision
 
 How the digital signature works?
 
 sender ---> file/text  ----> hash algorithm ---> digest ---> asymmetric crytographic algorithm  ----> digital signature+(file/text) ---> receiveer decrypts digital signature using key sent 
 by sender ---> gets the digest(from the sender) ---> Hash algorithm and produces a digest and matches with the digest receiver received from the sender--->
  
+ What is Http protocol?
+ A set of rules to communicate between sever and client , Http request are stateless,which means it forgets
 
-HTTP Header?
+What is Http Client?
+Any device that is connnected to internet to request resource is called Http client
+
+
+what is http header?
+
+http header is the metadata of the request 
+
+Request Context?
+Helps to put whatever we want in the request
