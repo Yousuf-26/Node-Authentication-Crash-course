@@ -1,0 +1,52 @@
+In Node Authentication there are mainly two strategies we follow:
+1. passport-local strategy
+2. passport-jwt strategy
+
+User Authentication choices:
+1. session
+2. JSON Web Tokens
+3. OAuth
+    - In-House
+    - SaaS
+
+What is Authentication?
+To know who the user is 
+
+what is Authorization?
+To know and allow what they can access or authorize to do in the secured system
+
+What is passport JS?
+It is a middleware which determines whether the requestor has permission to view that resource, if the user does not have permission, a 401 Unauthorized Error is thrown
+
+What is cookies?
+Ans: Cookies are medium to send session id
+1. Cookies can be modified by the client and they cant be trusted by the server
+2. Cookies and session can be good for some use cases but for complex we could go for
+- OAuth
+- OpenID
+- JWT
+
+What are tokens?
+Tokens can be seen as a successor or refined version of cookies-session Authentication which can be useful to tackle intricate authentication problem.
+Token is basically comprised of a temporary password and other useful information from the user to make the authentication more restricted & secure
+some possible options for token based authentication are:
+- OAuth
+- OpenID
+- JWT
+
+What is digital signature?
+A digital signature is equivalent to a handwritten signature, It is an eletronic verification of the sender and it serves three purposes
+
+1. Authentication - A digital signature gives the receiver reason to believe the message was created and sent by the claimed sender
+2. Non -repudiation - with digital signature the sender cannot deny having sent the message later on
+3. Integrity
+
+Digital signature uses asymmetric crytography, which means public key algorithm is employed
+
+How the digital signature works?
+
+sender ---> file/text  ----> hash algorithm ---> digest ---> asymmetric crytographic algorithm  ----> digital signature+(file/text) ---> receiveer decrypts digital signature using key sent 
+by sender ---> gets the digest(from the sender) ---> Hash algorithm and produces a digest and matches with the digest receiver received from the sender--->
+ 
+
+HTTP Header?
