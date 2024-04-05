@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "name": "node-authentication-crash-course",
+  "description": "This is a crash course that covers the fundamentals of user authentication",
+  "version": "1.0.0",
+  "main": "Cookies.js",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yousuf-26/Node-Authentication-Crash-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yousuf-26/Node-Authentication-Crash-course/issues"
+  },
+  "homepage": "https://github.com/Yousuf-26/Node-Authentication-Crash-course#readme"
+}
