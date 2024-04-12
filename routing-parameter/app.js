@@ -4,6 +4,13 @@ Route parameters are named URL segments that are used to capture the values spec
 The captured values are populated in the req.params object
 examples -  /student/12            -------- www.examples.com/student/12
             /product/:category/:id -------- www.example.com/product/mobile/23
+    
+   app.param()  - app.param() - The app.param() function is used to add the callback triggers to route parameters. It is
+   commonly used toheck for the existence of data requested related to the route parameter 
+   app.param(name,callback)
+   app.param([name1,name2,name3],callback)  
+   the callback is only get called when it hits the right router-param name(name1,name2,name3)
+   when    
 */
 
 const express = require("express");
@@ -24,6 +31,17 @@ app.get("/:name/:id/:course/:major", (req, res) => {
       major +
       " </h1>"
   );
+});
+
+//app.param() --> works like a middleware
+app.param("id", (req, res, next, id) => {
+  console.log("this is app.param");
+  //res.send(id);
+  next();
+});
+
+app.get("/:id", (req, res) => {
+  res.send("repsonse OK");
 });
 
 app.listen(3000, () => {
