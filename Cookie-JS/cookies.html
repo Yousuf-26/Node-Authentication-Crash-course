@@ -9,8 +9,22 @@
     <h1>Cookies</h1>
 
     <script>
-      document.cookie = "username=yousuf";
-      alert(document.cookie);
+      //HOW YOU SET COOKIES
+      //document.cookie = "username=yousuf";
+      //alert(document.cookie);
+
+      //max-age - It is used to create persistent cookie()
+      // there are two types of cookies 1. Persistent Cookie 2. Session Cookie
+      //1. Persistent Cookie - The browser keeps it up until their expiration date is reached
+      //2. Session Cookie - Cookies that are set without the expires/max-age field are called session cookies. It is destroyed when the user quits the browser
+      //document.cookie = "username=yousufCSUF; max-age=" + 60 * 60 * 24 * 10;
+      //document.cookie = "firstName=Christopher; max-age=" + 30 * 24 * 60 * 60;
+
+      // expire
+      document.cookie =
+        "lastName=yousufBorno; expires=Thu, 31 Dec 2099 23:59:59 GMT";
+
+      //domain
     </script>
   </body>
 </html>

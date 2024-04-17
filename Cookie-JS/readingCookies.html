@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading & setting Cookies</title>
+  </head>
+  <body>
+    <h1>Reading & Setting Cookies</h1>
+    <form action="" name="myform" method="POST">
+      Name: <input type="text" name="name" /> <br />
+      Email: <input type="text" name="email" /> <br />
+      Language: <input type="text" name="lang" /> <br /><br />
+      <input
+        type="button"
+        value="Set Cookies"
+        name="set"
+        onclick="setCookies()"
+      />
+      <input
+        type="button"
+        value="Get Cookies"
+        name="get"
+        onclick="getCookies()"
+      />
+      <br />
+    </form>
+
+    <script>
+      /*
+        We can read cookies by document.cookie. The problem occurs when we need the spceific part of cookie to preform some action
+        */
+      function setCookies() {
+        document.cookie = "name=" + document.myform.name.value;
+        document.cookie = "email=" + document.myform.email.value;
+        document.cookie = "lang=" + document.myform.lang.value;
+        alert(document.cookie);
+      }
+
+      function getCookies() {
+        var myCookiesArray = document.cookie.split(";");
+
+        //Splitting cookies in array form
+        console.log(myCookiesArray);
+      }
+    </script>
+  </body>
+</html>
