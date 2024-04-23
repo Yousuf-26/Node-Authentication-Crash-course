@@ -1,3 +1,11 @@
+Authentication types -
+
+1. Statefull - Cookie & Session
+2. Stateless - JWT
+
+
+
+
 In Node Authentication there are mainly two strategies we follow:
 1. passport-local strategy
 2. passport-jwt strategy
